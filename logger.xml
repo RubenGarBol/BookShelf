@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-06-07T17:38:18</date>
+  <millis>1591544298582</millis>
+  <sequence>0</sequence>
+  <logger>database.DatabaseManager</logger>
+  <level>INFO</level>
+  <class>database.DatabaseManager</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Obteniendo los libros</message>
+</record>
+</log>
