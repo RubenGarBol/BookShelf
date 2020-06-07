@@ -11,11 +11,11 @@ public class Book {
 	
 	public Book() {
 		super();		
-		BookName = "LIBRO";
-		AuthorName = "AUTOR";
-		Synopsis = " La catedral del mar es una trama en la que se entrecruzan lealtad y venganza, traición y amor, guerra y peste, en un mundo marcado por la intolerancia religiosa, la ambición material y la segregación social.";
+		BookName = "";
+		AuthorName = "";
+		Synopsis = "";
 		Pages = 0;
-		Cover = "./images/1.jpg";
+		Cover = "";
 	}
 	
 	public Book(String bookName, String authorName, String synopsis, int pages, String cover) {

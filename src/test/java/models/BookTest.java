@@ -26,7 +26,7 @@ public class BookTest {
 	public void setUp() {
 		BookName = "La catedral del mar";
 		AuthorName = "Ildefonso Falcones";
-		Synopsis = "Siglo XIV, Barcelona. Bajo la Corona de Aragón, la Ciudad Condal se encuentra en su momento de mayor prosperidad y los habitantes del humilde barrio de pescadores de la Ribera deciden construir, con el dinero de unos y los esfuerzos de otros, el mayor templo mariano jamás conocido: Santa María del Mar.";
+		Synopsis = "Siglo XIV, Barcelona. Bajo la Corona de Aragon, la Ciudad Condal se encuentra en su momento de mayor prosperidad y los habitantes del humilde barrio de pescadores de la Ribera deciden construir, con el dinero de unos y los esfuerzos de otros, el mayor templo mariano jamas conocido: Santa Maria del Mar.";
 		Pages = 3;
 		Cover = "https://cdn.pastemagazine.com/www/system/images/photo_albums/best-book-covers-fall-2019/large/bbcdune.jpg?1384968217";
 		
@@ -62,14 +62,14 @@ public class BookTest {
 	public void testGetPages() {
 		assertEquals(Pages, Book.getPages());
 		assertEquals(Pages, ParamBook.getPages());
-		assertEquals(3, EmptyBook.getPages());
+		assertEquals(0, EmptyBook.getPages());
 	}
 	
 	@Test
 	public void testGetCover() {
 		assertEquals(Cover, Book.getCover());
 		assertEquals(Cover, ParamBook.getCover());
-		assertEquals("", EmptyBook.getPages());
+		assertEquals("", EmptyBook.getCover());
 	}
 
 
@@ -87,8 +87,8 @@ public class BookTest {
 
 	@Test
 	public void testSetSynopsis() {
-		Book.setSynopsis("«El juego de Ripper». Es una novela policial de la escritora chilena Isabel Allende");
-		assertEquals("«El juego de Ripper». Es una novela policial de la escritora chilena Isabel Allende", Book.getSynopsis());
+		Book.setSynopsis("El juego de Ripper. Es una novela policial de la escritora chilena Isabel Allende");
+		assertEquals("El juego de Ripper. Es una novela policial de la escritora chilena Isabel Allende", Book.getSynopsis());
 	}
 
 	@Test
