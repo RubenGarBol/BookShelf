@@ -7,20 +7,30 @@ import org.junit.Test;
 public class BookMainTest {
 	
 	  @Test
-	  public void testMain() throws IOException {
+	  public void testMain() {
 	      String[] args = null;
 	      BookMain.main(args);
 	  }
 	
 	  @Test
-	  public void testBookMain() throws IOException  {
-	      BookMain bookMain = new BookMain();
+	  public void testBookMain() {
+	      try {
+			BookMain bookMain = new BookMain();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	  }
 
 	  @Test
-	  public void testOpenMain() throws IOException    {
+	  public void testOpenMain() {
 
-		  BookMain.openMain();    
+		  try {
+			BookMain.openMain();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}    
 	  }
 	
 

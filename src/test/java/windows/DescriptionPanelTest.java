@@ -23,7 +23,7 @@ public class DescriptionPanelTest  {
 	  book.setCover("https://ep01.epimg.net/cultura/imagenes/2018/08/15/babelia/1534351691_997591_1534352892_noticia_normal.jpg");
   }
   @Test
-  public void testImage()  throws Throwable  {
+  public void testImage(){
       Image image0 = DescriptionPanel.getScaledImage((Image) null, 1133, 1133);
       BufferedImage bufferedImage0 = (BufferedImage)DescriptionPanel.getScaledImage(image0, 1133, 368);
       assertEquals(2, bufferedImage0.getType());

@@ -6,14 +6,14 @@ import org.junit.Test;
 public class AddFrameTest  {
 
   @Test
-  public void testOpenAdd()  throws Throwable  {
+  public void testOpenAdd() {
       
         AddFrame.openAdd();
        
   }
 
   @Test
-  public void testAddFrame()  throws Throwable  {
+  public void testAddFrame() {
       AddFrame addFrame =  new AddFrame();
         
   }
