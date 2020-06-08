@@ -71,6 +71,7 @@ public class AddFrame extends JFrame {
 	private JLabel lblEmptyWarning;
 	private JScrollPane scrollPane;
 	private JLabel lblInfo;
+	private JLabel lblAddConfirmation;
 
 	/**
 	 * Create the frame.
@@ -79,7 +80,7 @@ public class AddFrame extends JFrame {
 	{
 		
 		setIconImage(Toolkit.getDefaultToolkit().getImage("./images/MainIcon.png"));
-		setTitle("A�ADIR LIBRO");	
+		setTitle("AÑADIR LIBRO");	
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 860, 520);
 		contentPane = new JPanel();
@@ -194,13 +195,27 @@ public class AddFrame extends JFrame {
 		
 		horizontalStrut_2 = Box.createHorizontalStrut(20);
 		pnlLeft.add(horizontalStrut_2, "cell 4 7");
+
+		lblAddConfirmation = new JLabel("");
+		lblAddConfirmation.setForeground(new Color(50, 205, 50));
+		pnlLeft.add(lblAddConfirmation, "cell 5 8");
 		
 		DatabaseManager.initBD();
 		btnAdd = new JButton("ANADIR");
 		btnAdd.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+		    	if(textTitle.getText().equals("") || textAuthor.getText().equals("") || textSynopsis.getText().equals("") 
+		    			|| textPages.getText().equals("") || textCover.getText().equals("")) 
+		    	{
+		    		lblEmptyWarning.setText("<html> No puede haber campos vacios </html> ");
+		    		
+		    		
+		    	} else {
+			    lblEmptyWarning.setText("");
 				Book libro = new Book( textTitle.getText(), textAuthor.getText(), textSynopsis.getText(), Integer.parseInt(textPages.getText()), textCover.getText());
 				DatabaseManager.addNewBook(libro);
+				lblAddConfirmation.setText("LIBRO AÑADIDO");
+		    	}
 				
 			}
 		});
@@ -292,6 +307,7 @@ public class AddFrame extends JFrame {
 		    }
 		});
 		pnlLeft.add(btnPreview, "cell 3 7,grow");
+		
 	}
 	
 	public static void openAdd() 

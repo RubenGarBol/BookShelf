@@ -77,7 +77,7 @@ public class DeleteFrame extends JFrame {
 		setBackground(Color.WHITE);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 860, 520);
-		setTitle("BookShelf");		
+		setTitle("BORRAR UN LIBRO");		
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
@@ -120,7 +120,7 @@ public class DeleteFrame extends JFrame {
 		JMenu mnManage = new JMenu("GESTIONAR LIBROS");
 		menuBar.add(mnManage);
 		
-		JMenuItem mnAdd = new JMenuItem("AÑADIR UN LIBRO");
+		JMenuItem mnAdd = new JMenuItem("Aï¿½ADIR UN LIBRO");
 		mnAdd.addActionListener(new java.awt.event.ActionListener() 
 		{
 		    public void actionPerformed(java.awt.event.ActionEvent evt) 

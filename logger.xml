@@ -13,3 +13,433 @@
   <message>Obteniendo los libros</message>
 </record>
 </log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-06-08T00:21:36</date>
+  <millis>1591568496936</millis>
+  <sequence>0</sequence>
+  <logger>database.DatabaseManager</logger>
+  <level>INFO</level>
+  <class>database.DatabaseManager</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Obteniendo los libros</message>
+</record>
+<record>
+  <date>2020-06-08T00:21:36</date>
+  <millis>1591568496936</millis>
+  <sequence>1</sequence>
+  <logger>database.DatabaseManager</logger>
+  <level>INFO</level>
+  <class>database.DatabaseManager</class>
+  <method>log</method>
+  <thread>18</thread>
+  <message>Obteniendo los libros</message>
+</record>
+<record>
+  <date>2020-06-08T00:21:37</date>
+  <millis>1591568497865</millis>
+  <sequence>2</sequence>
+  <logger>database.DatabaseManager</logger>
+  <level>INFO</level>
+  <class>database.DatabaseManager</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Obteniendo los libros</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-06-08T02:45:08</date>
+  <millis>1591577108538</millis>
+  <sequence>0</sequence>
+  <logger>database.DatabaseManager</logger>
+  <level>INFO</level>
+  <class>database.DatabaseManager</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Obteniendo los libros</message>
+</record>
+<record>
+  <date>2020-06-08T02:45:09</date>
+  <millis>1591577109371</millis>
+  <sequence>1</sequence>
+  <logger>database.DatabaseManager</logger>
+  <level>INFO</level>
+  <class>database.DatabaseManager</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Obteniendo los libros</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-06-08T03:14:13</date>
+  <millis>1591578853291</millis>
+  <sequence>0</sequence>
+  <logger>database.DatabaseManager</logger>
+  <level>INFO</level>
+  <class>database.DatabaseManager</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Obteniendo los libros</message>
+</record>
+<record>
+  <date>2020-06-08T03:14:14</date>
+  <millis>1591578854049</millis>
+  <sequence>1</sequence>
+  <logger>database.DatabaseManager</logger>
+  <level>INFO</level>
+  <class>database.DatabaseManager</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Obteniendo los libros</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-06-08T03:16:39</date>
+  <millis>1591578999442</millis>
+  <sequence>0</sequence>
+  <logger>database.DatabaseManager</logger>
+  <level>INFO</level>
+  <class>database.DatabaseManager</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Obteniendo los libros</message>
+</record>
+<record>
+  <date>2020-06-08T03:16:40</date>
+  <millis>1591579000292</millis>
+  <sequence>1</sequence>
+  <logger>database.DatabaseManager</logger>
+  <level>INFO</level>
+  <class>database.DatabaseManager</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Obteniendo los libros</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-06-08T03:17:36</date>
+  <millis>1591579056044</millis>
+  <sequence>0</sequence>
+  <logger>database.DatabaseManager</logger>
+  <level>INFO</level>
+  <class>database.DatabaseManager</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Obteniendo los libros</message>
+</record>
+<record>
+  <date>2020-06-08T03:17:36</date>
+  <millis>1591579056842</millis>
+  <sequence>1</sequence>
+  <logger>database.DatabaseManager</logger>
+  <level>INFO</level>
+  <class>database.DatabaseManager</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Obteniendo los libros</message>
+</record>
+<record>
+  <date>2020-06-08T03:17:36</date>
+  <millis>1591579056846</millis>
+  <sequence>2</sequence>
+  <logger>database.DatabaseManager</logger>
+  <level>INFO</level>
+  <class>database.DatabaseManager</class>
+  <method>log</method>
+  <thread>18</thread>
+  <message>Obteniendo los libros</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-06-08T03:22:15</date>
+  <millis>1591579335846</millis>
+  <sequence>0</sequence>
+  <logger>database.DatabaseManager</logger>
+  <level>INFO</level>
+  <class>database.DatabaseManager</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>El libro  ha sido añadido</message>
+</record>
+<record>
+  <date>2020-06-08T03:22:15</date>
+  <millis>1591579335912</millis>
+  <sequence>1</sequence>
+  <logger>database.DatabaseManager</logger>
+  <level>INFO</level>
+  <class>database.DatabaseManager</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>El libro  de  ha sido borrado correctamente</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-06-08T03:22:47</date>
+  <millis>1591579367859</millis>
+  <sequence>0</sequence>
+  <logger>database.DatabaseManager</logger>
+  <level>INFO</level>
+  <class>database.DatabaseManager</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>El libro  ha sido añadido</message>
+</record>
+<record>
+  <date>2020-06-08T03:22:47</date>
+  <millis>1591579367915</millis>
+  <sequence>1</sequence>
+  <logger>database.DatabaseManager</logger>
+  <level>INFO</level>
+  <class>database.DatabaseManager</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>El libro  de  ha sido borrado correctamente</message>
+</record>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-06-08T22:05:59</date>
+  <millis>1591646759013</millis>
+  <sequence>0</sequence>
+  <logger>database.DatabaseManager</logger>
+  <level>INFO</level>
+  <class>database.DatabaseManager</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Obteniendo los libros</message>
+</record>
+<record>
+  <date>2020-06-08T22:05:59</date>
+  <millis>1591646759820</millis>
+  <sequence>1</sequence>
+  <logger>database.DatabaseManager</logger>
+  <level>INFO</level>
+  <class>database.DatabaseManager</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Obteniendo los libros</message>
+</record>
+<record>
+  <date>2020-06-08T22:05:59</date>
+  <millis>1591646759823</millis>
+  <sequence>2</sequence>
+  <logger>database.DatabaseManager</logger>
+  <level>INFO</level>
+  <class>database.DatabaseManager</class>
+  <method>log</method>
+  <thread>16</thread>
+  <message>Obteniendo los libros</message>
+</record>
+<record>
+  <date>2020-06-08T22:06:01</date>
+  <millis>1591646761468</millis>
+  <sequence>3</sequence>
+  <logger>database.DatabaseManager</logger>
+  <level>INFO</level>
+  <class>database.DatabaseManager</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Obteniendo los libros</message>
+</record>
+<record>
+  <date>2020-06-08T22:06:01</date>
+  <millis>1591646761953</millis>
+  <sequence>4</sequence>
+  <logger>database.DatabaseManager</logger>
+  <level>INFO</level>
+  <class>database.DatabaseManager</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Obteniendo los libros</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-06-08T22:07:09</date>
+  <millis>1591646829581</millis>
+  <sequence>0</sequence>
+  <logger>database.DatabaseManager</logger>
+  <level>INFO</level>
+  <class>database.DatabaseManager</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>El libro  ha sido añadido</message>
+</record>
+<record>
+  <date>2020-06-08T22:07:09</date>
+  <millis>1591646829648</millis>
+  <sequence>1</sequence>
+  <logger>database.DatabaseManager</logger>
+  <level>INFO</level>
+  <class>database.DatabaseManager</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>El libro  de  ha sido borrado correctamente</message>
+</record>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-06-08T22:09:13</date>
+  <millis>1591646953363</millis>
+  <sequence>0</sequence>
+  <logger>database.DatabaseManager</logger>
+  <level>INFO</level>
+  <class>database.DatabaseManager</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>El libro  ha sido añadido</message>
+</record>
+<record>
+  <date>2020-06-08T22:09:13</date>
+  <millis>1591646953410</millis>
+  <sequence>1</sequence>
+  <logger>database.DatabaseManager</logger>
+  <level>INFO</level>
+  <class>database.DatabaseManager</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>El libro  de  ha sido borrado correctamente</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-06-08T22:09:30</date>
+  <millis>1591646970893</millis>
+  <sequence>0</sequence>
+  <logger>database.DatabaseManager</logger>
+  <level>INFO</level>
+  <class>database.DatabaseManager</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>El libro  ha sido añadido</message>
+</record>
+<record>
+  <date>2020-06-08T22:09:30</date>
+  <millis>1591646970938</millis>
+  <sequence>1</sequence>
+  <logger>database.DatabaseManager</logger>
+  <level>INFO</level>
+  <class>database.DatabaseManager</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>El libro  de  ha sido borrado correctamente</message>
+</record>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-06-08T22:10:05</date>
+  <millis>1591647005817</millis>
+  <sequence>0</sequence>
+  <logger>database.DatabaseManager</logger>
+  <level>INFO</level>
+  <class>database.DatabaseManager</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Obteniendo los libros</message>
+</record>
+<record>
+  <date>2020-06-08T22:10:20</date>
+  <millis>1591647020649</millis>
+  <sequence>1</sequence>
+  <logger>database.DatabaseManager</logger>
+  <level>INFO</level>
+  <class>database.DatabaseManager</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Obteniendo los libros</message>
+</record>
+<record>
+  <date>2020-06-08T22:10:26</date>
+  <millis>1591647026691</millis>
+  <sequence>2</sequence>
+  <logger>database.DatabaseManager</logger>
+  <level>INFO</level>
+  <class>database.DatabaseManager</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Obteniendo los libros</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-06-08T22:12:14</date>
+  <millis>1591647134573</millis>
+  <sequence>0</sequence>
+  <logger>database.DatabaseManager</logger>
+  <level>INFO</level>
+  <class>database.DatabaseManager</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>El libro  ha sido añadido</message>
+</record>
+<record>
+  <date>2020-06-08T22:12:14</date>
+  <millis>1591647134621</millis>
+  <sequence>1</sequence>
+  <logger>database.DatabaseManager</logger>
+  <level>INFO</level>
+  <class>database.DatabaseManager</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>El libro  de  ha sido borrado correctamente</message>
+</record>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-06-08T22:19:00</date>
+  <millis>1591647540165</millis>
+  <sequence>0</sequence>
+  <logger>database.DatabaseManager</logger>
+  <level>INFO</level>
+  <class>database.DatabaseManager</class>
+  <method>log</method>
+  <thread>14</thread>
+  <message>Obteniendo los libros</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-06-08T22:19:20</date>
+  <millis>1591647560344</millis>
+  <sequence>0</sequence>
+  <logger>database.DatabaseManager</logger>
+  <level>INFO</level>
+  <class>database.DatabaseManager</class>
+  <method>log</method>
+  <thread>14</thread>
+  <message>Obteniendo los libros</message>
+</record>
+</log>

@@ -54,6 +54,7 @@ public class DescriptionPanel extends JPanel {
 			// TODO Auto-generated catch block
 			//e.printStackTrace();
 		}
+		
 		setLayout(new MigLayout("", "[75px][][][150px]", "[25px][25px][][75px][25px]"));
 		
 		JLabel lblLibro = new JLabel("LIBRO: ");

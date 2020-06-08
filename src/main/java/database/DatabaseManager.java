@@ -1,17 +1,12 @@
 package database;
 
-import java.io.ByteArrayInputStream;
-import java.io.IOException;
-import java.io.ObjectInputStream;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.sql.Time;
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.logging.FileHandler;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -22,10 +17,7 @@ import models.Book;
 
 public class DatabaseManager {
 
-
-		
-		
-		private static Exception lastError = null;  // Información de último error SQL ocurrido
+		private static Exception lastError = null;  // InformaciÃ³n de Ãºltimo error SQL ocurrido
 		private static final String HOST = "ec2-54-247-118-139.eu-west-1.compute.amazonaws.com/d4od6io6djo5n2";
 		private static final String USERNAME= "fdfxbayznyqkol";
 		private static final String PASSWORD ="00835ba68610e674b09df54a8b05b9982bef675946c38b13dfe24e463212bf9c" ;
@@ -49,7 +41,7 @@ public class DatabaseManager {
 
 				
 		/** Cierra la base de datos abierta
-		 * @param con	Conexión abierta de la BD
+		 * @param con	ConexiÃ³n abierta de la BD
 		 * @param st	Sentencia abierta de la BD
 		 */
 		public static boolean cerrarBD( final Connection con, final Statement st ) {
@@ -66,9 +58,9 @@ public class DatabaseManager {
 		}
 		
 		/**
-		 * Método que permite recuperar todos los libros de la base de datos
+		 * MÃ©todo que permite recuperar todos los libros de la base de datos
 		 * 
-		 * @author Rubén García Bolaños
+		 * @author RubÃ©n GarcÃ­a BolaÃ±os
 		 * 
 		 * @return books ArrayList con todas los libros que hay en la base de datos
 		 */
@@ -105,11 +97,11 @@ public class DatabaseManager {
 
 
 		/**
-		 * Método que permite añadir un libro a la base de datos
+		 * MÃ©todo que permite aÃ±adir un libro a la base de datos
 		 * 
-		 * @author Rubén García Bolaños
+		 * @author RubÃ©n GarcÃ­a BolaÃ±os
 		 * 
-		 * @param b Libro que se quiere añadir a la base de datos
+		 * @param b Libro que se quiere aÃ±adir a la base de datos
 		 */
 
 		public static void addNewBook(Book b){
@@ -128,7 +120,7 @@ public class DatabaseManager {
 
 				stmt.executeUpdate();
 
-				log(Level.INFO, "El libro " + b.getBookName() + " ha sido añadido", null);
+				log(Level.INFO, "El libro " + b.getBookName() + " ha sido aÃ±adido", null);
 			} catch (SQLException e) {
 				log( Level.SEVERE, "Error al insertar el libro " + sql, e );
 				setLastError(e);
@@ -137,9 +129,9 @@ public class DatabaseManager {
 		}
 
 		/**
-		 * Método que permite eliminar un libro a la base de datos
+		 * MÃ©todo que permite eliminar un libro a la base de datos
 		 * 
-		 * @author Rubén García Bolaños
+		 * @author RubÃ©n GarcÃ­a BolaÃ±os
 		 * 
 		 * @param book Nombre del libro a borrar
 		 * @param author Nombre del autor a borrar
@@ -166,11 +158,11 @@ public class DatabaseManager {
 		}
 		
 		
-		// Método público para asignar un logger externo
+		// MÃ©todo pÃºblico para asignar un logger externo
 		public static void setLogger( Logger logger ) {
 			DatabaseManager.logger = logger;
 		}
-		// Método local para loggear (si no se asigna un logger externo, se asigna uno local)
+		// MÃ©todo local para loggear (si no se asigna un logger externo, se asigna uno local)
 		private static void log( Level level, String msg, Throwable excepcion ) {
 			if (logger==null) {  // Logger por defecto local:
 				logger = Logger.getLogger( DatabaseManager.class.getName() );  // Nombre del logger - el de la clase

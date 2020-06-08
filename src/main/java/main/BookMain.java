@@ -59,7 +59,9 @@ public class BookMain extends JFrame {
 	 * @throws IOException 
 	 */
 	public BookMain() throws IOException {
-		setIconImage(Toolkit.getDefaultToolkit().getImage("./images/MainIcon.png"));
+		//setIconImage(Toolkit.getDefaultToolkit().getImage("./images/MainIcon.png"));
+
+		setIconImage(Toolkit.getDefaultToolkit().getImage("./src/main/resources/MainIcon.png"));
 		setBackground(Color.WHITE);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 860, 520);
@@ -100,7 +102,7 @@ public class BookMain extends JFrame {
 		JMenu mnManage = new JMenu("GESTIONAR LIBROS");
 		menuBar.add(mnManage);
 		
-		JMenuItem mnAdd = new JMenuItem("AÑADIR UN LIBRO");
+		JMenuItem mnAdd = new JMenuItem("AÃ‘ADIR UN LIBRO");
 		mnAdd.addActionListener(new java.awt.event.ActionListener() 
 		{
 		    public void actionPerformed(java.awt.event.ActionEvent evt) 
