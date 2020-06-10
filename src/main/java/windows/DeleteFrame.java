@@ -3,7 +3,6 @@ package windows;
 import java.awt.BorderLayout;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
-import javax.swing.border.Border;
 import javax.swing.border.EmptyBorder;
 
 import database.DatabaseManager;
@@ -13,32 +12,28 @@ import models.Book;
 import javax.swing.JButton;
 import javax.swing.JScrollPane;
 import java.awt.Toolkit;
-import java.awt.event.KeyAdapter;
-import java.awt.event.KeyEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.io.IOException;
 import java.util.ArrayList;
 
-import javax.swing.JTextField;
-import javax.swing.JLabel;
 import net.miginfocom.swing.MigLayout;
 import javax.swing.JMenuBar;
 import java.awt.Color;
 import javax.swing.JMenu;
 import javax.swing.JMenuItem;
-import javax.swing.UIManager;
-import java.awt.Component;
 import java.awt.Dimension;
 
-import javax.swing.BorderFactory;
-import javax.swing.Box;
-import javax.swing.JTextArea;
-import javax.swing.SwingConstants;
-import java.awt.Font;
 import javax.swing.border.BevelBorder;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+
+/**
+ * @author Rubén García
+ * 
+ * Clase que contiene la ventana encargada de gestionar el borrado de los libros existentes.
+ *
+ */
 
 public class DeleteFrame extends JFrame {
 
@@ -47,31 +42,13 @@ public class DeleteFrame extends JFrame {
 	 */
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
-	private JTextField textTitle;
-	private JTextField textAuthor;
-	private JPanel panel_1;
-	private JButton btnPreview;
-	private JLabel lblVisualize;
-	private JButton btnDelete;
-	private JMenuBar menuBar;
-	private JMenu mnManage;
-	private JMenuItem mnBack;
-	private JMenuItem mnDelete;
-	private Component horizontalStrut;
-	private Component verticalStrut_1;
-	private JLabel lblData;
-	private JLabel lblNewLabel_6;
-	private Component horizontalStrut_1;
-	private JLabel lblConfirmation;
-	private JLabel lblPageWarning;
-	private Component horizontalStrut_2;
-	private JLabel lblEmptyWarning;
-
+	
 	/**
-	 * Create the frame.
+	 * Constructor de la clase DeleteFrame, se encarga de gestionar la ubicacion de los objetos en pantalla
+	 * 
 	 * @throws IOException 
 	 */
-	public DeleteFrame () throws IOException 
+	public DeleteFrame () throws IOException  
 	{
 		setIconImage(Toolkit.getDefaultToolkit().getImage("./images/MainIcon.png"));
 		setBackground(Color.WHITE);
@@ -120,7 +97,7 @@ public class DeleteFrame extends JFrame {
 		JMenu mnManage = new JMenu("GESTIONAR LIBROS");
 		menuBar.add(mnManage);
 		
-		JMenuItem mnAdd = new JMenuItem("A�ADIR UN LIBRO");
+		JMenuItem mnAdd = new JMenuItem("AÑADIR UN LIBRO");
 		mnAdd.addActionListener(new java.awt.event.ActionListener() 
 		{
 		    public void actionPerformed(java.awt.event.ActionEvent evt) 
@@ -182,6 +159,12 @@ public class DeleteFrame extends JFrame {
 		}
 	}
 	
+	/**
+	 * Metodo para lanzar el constructor de la pantalla de Delete y hacerla visible
+	 *
+	 * @throws IOException 
+	 * 
+	 */
 	public static void openDelete() throws IOException 
 	{
 		DeleteFrame deleteFrame = new DeleteFrame();

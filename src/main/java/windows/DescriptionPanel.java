@@ -23,6 +23,13 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.awt.Color;
 
+/**
+ * @author Rubén García
+ * 
+ * Clase que contiene los parametros para la construccion de un JPanel customizado para mostrar la descripcion de los libros.
+ *
+ */
+
 public class DescriptionPanel extends JPanel {
 
 	
@@ -95,6 +102,16 @@ public class DescriptionPanel extends JPanel {
 		add(lblNewLabel_5, "cell 1 4,alignx center,aligny center");
 
 	}
+	
+	/**
+	 * Metodo para redimensionar una imagen al tamaño que se desee.
+	 *
+	 * @param srcImg Imagen que se desea redimensionar.
+	 * @param w Anchura de la imagen deseada.
+	 * @param h Altura de la imagen deseada.
+	 * 
+	 * @return Imagen redimensionada.
+	 */
 	
 	public static Image getScaledImage(Image srcImg, int w, int h){
 	    BufferedImage resizedImg = new BufferedImage(w, h, BufferedImage.TYPE_INT_ARGB);

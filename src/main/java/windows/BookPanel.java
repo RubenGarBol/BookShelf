@@ -16,6 +16,13 @@ import java.net.URL;
 import javax.imageio.ImageIO;
 import javax.swing.Box;
 
+
+/**
+ * @author Rubén García
+ * 
+ * Clase que contiene los parametros para la construccion de un JPanel customizado para mostrar la preview de los libros en la pagina principal
+ *
+ */
 public class BookPanel extends JPanel {
 
 	/**

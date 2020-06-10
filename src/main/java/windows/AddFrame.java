@@ -40,6 +40,13 @@ import java.awt.event.MouseEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
+/**
+ * @author Rubén García
+ * 
+ * Clase que contiene la ventana encargada de gestionar el añadido de nuevos libros.
+ *
+ */
+
 public class AddFrame extends JFrame {
 
 	/**
@@ -68,13 +75,14 @@ public class AddFrame extends JFrame {
 	private JLabel lblNewLabel_6;
 	private JLabel lblPageWarning;
 	private Component horizontalStrut_2;
-	private JLabel lblEmptyWarning;
+	private JLabel lblEmptyBookWarning;
 	private JScrollPane scrollPane;
 	private JLabel lblInfo;
 	private JLabel lblAddConfirmation;
 
 	/**
-	 * Create the frame.
+	 * Constructor de la clase AddFrame, se encarga de gestionar la ubicacion de los objetos en pantalla
+	 * 
 	 */
 	public AddFrame() 
 	{
@@ -179,10 +187,10 @@ public class AddFrame extends JFrame {
 		verticalStrut_1 = Box.createVerticalStrut(60);
 		pnlLeft.add(verticalStrut_1, "cell 1 6");
 		
-		lblEmptyWarning = new JLabel("");
-		lblEmptyWarning.setHorizontalAlignment(SwingConstants.CENTER);
-		lblEmptyWarning.setForeground(Color.RED);
-		pnlLeft.add(lblEmptyWarning, "cell 3 6,alignx center,aligny center");
+		lblEmptyBookWarning = new JLabel("");
+		lblEmptyBookWarning.setHorizontalAlignment(SwingConstants.CENTER);
+		lblEmptyBookWarning.setForeground(Color.RED);
+		pnlLeft.add(lblEmptyBookWarning, "cell 3 6,alignx center,aligny center");
 		
 		lblVisualize = new JLabel("VISUALIZAR LIBRO");
 		lblVisualize.setFont(new Font("Tahoma", Font.BOLD, 14));
@@ -207,11 +215,11 @@ public class AddFrame extends JFrame {
 		    	if(textTitle.getText().equals("") || textAuthor.getText().equals("") || textSynopsis.getText().equals("") 
 		    			|| textPages.getText().equals("") || textCover.getText().equals("")) 
 		    	{
-		    		lblEmptyWarning.setText("<html> No puede haber campos vacios </html> ");
+		    		lblEmptyBookWarning.setText("<html> No puede haber campos vacios </html> ");
 		    		
 		    		
 		    	} else {
-			    lblEmptyWarning.setText("");
+			    lblEmptyBookWarning.setText("");
 				Book libro = new Book( textTitle.getText(), textAuthor.getText(), textSynopsis.getText(), Integer.parseInt(textPages.getText()), textCover.getText());
 				DatabaseManager.addNewBook(libro);
 				lblAddConfirmation.setText("LIBRO AÑADIDO");
@@ -284,11 +292,11 @@ public class AddFrame extends JFrame {
 		    	if(textTitle.getText().equals("") || textAuthor.getText().equals("") || textSynopsis.getText().equals("") 
 		    			|| textPages.getText().equals("") || textCover.getText().equals("")) 
 		    	{
-		    		lblEmptyWarning.setText("<html> No puede haber campos vacios </html> ");
+		    		lblEmptyBookWarning.setText("<html> No puede haber campos vacios </html> ");
 		    		
 		    		
 		    	} else {
-			    	lblEmptyWarning.setText("");
+			    	lblEmptyBookWarning.setText("");
 			    	Book prueba = new Book( textTitle.getText(), textAuthor.getText(), textSynopsis.getText(), Integer.parseInt(textPages.getText()), textCover.getText());
 	
 			    	DescriptionPanel Description;
@@ -309,6 +317,11 @@ public class AddFrame extends JFrame {
 		pnlLeft.add(btnPreview, "cell 3 7,grow");
 		
 	}
+	
+	/**
+	 * Metodo para lanzar el constructor de la pantalla de Add y hacerla visible
+	 *
+	 */
 	
 	public static void openAdd() 
 	{

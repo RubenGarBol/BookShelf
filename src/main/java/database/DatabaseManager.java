@@ -14,6 +14,12 @@ import java.util.logging.Logger;
 
 import models.Book;
 
+/**
+ * @author  Rubén García
+ * 
+ * Clase que permite realizar interacciones con la base de datos
+ * 
+ */
 
 public class DatabaseManager {
 
@@ -24,7 +30,9 @@ public class DatabaseManager {
 		private static Connection conn;
 		private static Logger logger;
 		
-		/**metodo para iniciar conexion con BD
+		/**
+		 * Metodo para iniciar conexion con BD
+		 * 
 		 * @return conexion de la base de datos
 		 */
 		public static Connection initBD() {
@@ -40,7 +48,9 @@ public class DatabaseManager {
 		}
 
 				
-		/** Cierra la base de datos abierta
+		/** 
+		 * Cierra la base de datos abierta
+		 * 
 		 * @param con	Conexión abierta de la BD
 		 * @param st	Sentencia abierta de la BD
 		 */
@@ -59,8 +69,6 @@ public class DatabaseManager {
 		
 		/**
 		 * Método que permite recuperar todos los libros de la base de datos
-		 * 
-		 * @author Rubén García Bolaños
 		 * 
 		 * @return books ArrayList con todas los libros que hay en la base de datos
 		 */
@@ -99,8 +107,6 @@ public class DatabaseManager {
 		/**
 		 * Método que permite añadir un libro a la base de datos
 		 * 
-		 * @author Rubén García Bolaños
-		 * 
 		 * @param b Libro que se quiere añadir a la base de datos
 		 */
 
@@ -131,8 +137,6 @@ public class DatabaseManager {
 		/**
 		 * Método que permite eliminar un libro a la base de datos
 		 * 
-		 * @author Rubén García Bolaños
-		 * 
 		 * @param book Nombre del libro a borrar
 		 * @param author Nombre del autor a borrar
 		 */
@@ -158,11 +162,22 @@ public class DatabaseManager {
 		}
 		
 		
-		// Método público para asignar un logger externo
+		/**
+		 * Método público para asignar un logger externo
+		 * @param logger
+		 */
+		
 		public static void setLogger( Logger logger ) {
 			DatabaseManager.logger = logger;
 		}
-		// Método local para loggear (si no se asigna un logger externo, se asigna uno local)
+		
+		/**
+		 * Método local para loggear (si no se asigna un logger externo, se asigna uno local)
+		 * @param level
+		 * @param msg
+		 * @param excepcion
+		 */
+		
 		private static void log( Level level, String msg, Throwable excepcion ) {
 			if (logger==null) {  // Logger por defecto local:
 				logger = Logger.getLogger( DatabaseManager.class.getName() );  // Nombre del logger - el de la clase

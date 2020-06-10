@@ -1,5 +1,11 @@
 package models;
 
+/**
+ * @author Rubén García
+ * 
+ * Clase que contiene la información de los libros
+ */
+
 public class Book {
 	
 
@@ -9,6 +15,10 @@ public class Book {
 	private int Pages;	
 	private String Cover;
 	
+	
+	/**
+	 * Constructor vacio	
+	 */  
 	public Book() {
 		super();		
 		BookName = "";
@@ -18,6 +28,15 @@ public class Book {
 		Cover = "";
 	}
 	
+	/**Constructor por parametros
+	 * 
+	 * @param bookName Nombre del libro
+	 * @param authorName Nombre del autor
+	 * @param synopsis Sinopsis del libro
+	 * @param pages Numero de paginas del libro
+	 * @param cover Link a la imagen de la portada del libro
+	 */
+	  
 	public Book(String bookName, String authorName, String synopsis, int pages, String cover) {
 		super();
 		BookName = bookName;
@@ -26,7 +45,11 @@ public class Book {
 		Pages = pages;
 		Cover = cover;
 	}
-	
+	/**
+	 * Constructor por objeto
+	 *
+	 * @param book Libro que se quiere añadir
+	 */  
 	public Book(Book book) {
 		super();
 		this.BookName = book.BookName;

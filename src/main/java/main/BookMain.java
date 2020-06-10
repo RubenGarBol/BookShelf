@@ -30,11 +30,17 @@ import javax.swing.JMenu;
 import javax.swing.JMenuItem;
 import net.miginfocom.swing.MigLayout;
 
+
+
+/**
+ * @author Rubén García
+ * 
+ * Clase que contiene la ventana encargada de mostrar los libros existentes.
+ *
+ */
+
 public class BookMain extends JFrame {
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
 
@@ -53,9 +59,9 @@ public class BookMain extends JFrame {
 			}
 		});
 	}
-
 	/**
-	 * Create the frame.
+	 * Constructor de la clase BookMain, se encarga de gestionar la ubicacion de los objetos en pantalla.
+	 * 
 	 * @throws IOException 
 	 */
 	public BookMain() throws IOException {
@@ -158,6 +164,12 @@ public class BookMain extends JFrame {
 		}
 	}
 	
+	/**
+	 * Metodo para lanzar el constructor de la pantalla principal y hacerla visible
+	 *
+	 * @throws IOException 
+	 * 
+	 */
 	public static void openMain() throws IOException {
 		BookMain bookMain = new BookMain();
 		bookMain.setSize(860, 520);

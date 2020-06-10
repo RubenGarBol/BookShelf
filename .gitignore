@@ -8,3 +8,4 @@ BookShelf.iml
 *.class
 /target/
 target/
+logger.xml
